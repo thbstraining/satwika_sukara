@@ -1,0 +1,55 @@
+.city-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('../Assets/citylist.jpg'); /* Adjust the path to your image file */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  .city-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(33% - 40px); /* Adjusted for better spacing */
+    transition: background-color 0.3s ease-in-out;
+    backdrop-filter: blur(10px); /* Add a blur effect for better readability */
+  }
+  
+  .city-card:hover {
+    background-color: rgba(249, 243, 243, 0.865);
+  }
+  
+  .city-name {
+    font-weight: bold;
+    color: #ce6616;
+    font-size: 1.5em; /* Increased font size for city name */
+    margin-bottom: 10px; /* Added margin for better spacing */
+  }
+  
+  .city-card p {
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 15px; /* Added margin for better spacing */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgba(151, 83, 30, 0.8); /* Darker background for button */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s; /* Added transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #ce6616;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
